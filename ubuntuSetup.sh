@@ -1,18 +1,6 @@
 #!/bin/bash
-# Sojharo's Development Machine Setup on Ubuntu
-# Author : Sojharo
-#
-# set software sources to server for united states
-#
-# For other software:
-## VLC from software center
-## virtual box from software center
-## PDF Mod from software center
-## shutter from software center
-## kazam from software center
-## install unity tweak tool from software center
-## install rebar: pull from github (for building erlang applications)
-## Learn from https://github.com/rafaelstz/simplesh
+# Development Machine Setup on Ubuntu
+# Adapted from : Sojharo
 
 sudo apt-get update
 
@@ -54,11 +42,9 @@ sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install code
 
-# fish shell
-sudo apt-get install -y fish
-chsh -s /usr/bin/fish
-mkdir -p ~/.config/fish
-echo "set -g -x fish_greeting ''" > ~/.config/fish/config.fish
+# # Java
+# sudo apt-get install -y default-jre
+# sudo apt-get install -y default-jdk
 
 # # Gimp Image Editor
 # sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
@@ -70,3 +56,11 @@ echo "set -g -x fish_greeting ''" > ~/.config/fish/config.fish
 # sudo apt-get install -y tlp tlp-rdw smartmontools ethtool
 # sudo tlp start
 # sudo tlp stat
+
+
+# fish shell
+sudo apt-get install -y fish
+chsh -s /usr/bin/fish
+mkdir -p ~/.config/fish
+echo "set -g -x fish_greeting ''" > ~/.config/fish/config.fish
+
